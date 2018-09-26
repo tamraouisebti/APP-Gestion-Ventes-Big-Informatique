@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/fiche_client"
+        android:title="Fiche Client"
+        android:icon="@mipmap/fiche_client"/>
+    <item
+        android:id="@+id/catalogue_prix"
+        android:title="Catalogue Prix de Vente"
+        android:icon="@mipmap/catalogue_prix"/>
+    <item android:title="Proforma Client"
+        android:id="@+id/pro_client"
+        android:icon="@mipmap/proforma"/>
+    <item
+        android:id="@+id/contrat_client"
+        android:title="Contrat Client"
+        android:icon="@mipmap/contract"/>
+    <item
+        android:id="@+id/cmd_client"
+        android:title="Commande Client"
+        android:icon="@mipmap/commande"/>
+    <item
+        android:id="@+id/location_cl"
+        android:title="Location calendrier"
+        android:icon="@mipmap/calendar"/>
+    <item
+        android:id="@+id/location_list"
+        android:title="Location liste "
+        android:icon="@mipmap/liste"/>
+    <item
+        android:id="@+id/fct_client"
+        android:title="Facture Client"
+        android:icon="@mipmap/proformat_fact"/>
+    <item
+        android:id="@+id/fct_rg"
+        android:title="Facture R.G"
+        android:icon="@mipmap/facture_rg"/>
+    <item
+        android:id="@+id/fct_avoir"
+        android:title="Facture d'avoir "
+        android:icon="@mipmap/avoir"/>
+    <item
+        android:id="@+id/bon_liv"
+        android:title="Bon Livraison"
+        android:icon="@mipmap/bon_liv"/>
+    <item
+        android:id="@+id/bon_retour"
+        android:title="Bon Retour"
+        android:icon="@mipmap/bon_retour"/>
+    <item
+        android:id="@+id/paiement_client"
+        android:title="Paiement Client"
+        android:icon="@mipmap/paiement_client"/>
+
+</menu>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="224dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="324dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.275"
+                tools:layout_editor_absoluteX="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="N°Avoir" />
+
+                    <EditText
+                        android:id="@+id/nv_numero_avoir_valeur_editxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Client" />
+
+                    <EditText
+                        android:id="@+id/nv_client_avoir_valeur_editxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Date" />
+
+                    <EditText
+                        android:id="@+id/nv_date_avoir_valeur_editxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="date" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Mode Avoir" />
+
+                    <EditText
+                        android:id="@+id/nv_mode_avoir_valeur_editxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Facture" />
+
+                    <EditText
+                        android:id="@+id/nv_facture_avoir_valeur_editxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Spinner
+            android:id="@+id/facture_avoir_qte_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </Spinner>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/scrollView2">
+
+
+
+            <ViewFlipper
+                android:id="@+id/nv_facture_avoir_qte_vf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <include layout="@layout/article_facture_avoir_qte"/>
+                <include layout="@layout/nv_description_proforma_layout"/>
+                <include layout="@layout/principale_facture_client"/>
+                <include layout="@layout/proforma_principale_layout"/>
+                <include layout="@layout/principale_bon_livraison"/>
+                <include layout="@layout/principale_commande"/>
+                <include layout="@layout/principale_contrat_layout"/>
+                <include layout="@layout/nv_montant_proforma_layout"/>
+
+            </ViewFlipper>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

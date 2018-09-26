@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <CheckBox
+            android:id="@+id/check_liste_article_facture_avoir_qte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/numero_liste_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Article" />
+
+        <TextView
+            android:id="@+id/client_liste_article_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Désignation" />
+
+        <TextView
+            android:id="@+id/date_liste_article_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Magasin" />
+
+        <TextView
+            android:id="@+id/facture_liste_article_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Magasin L" />
+
+        <TextView
+            android:id="@+id/montant_ttc_liste_article_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="U.M" />
+
+        <TextView
+            android:id="@+id/prix_u_payer_liste_article_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Qte.Fact" />
+        <TextView
+            android:id="@+id/remise_payer_liste_article_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Qte Liv" />
+        <TextView
+            android:id="@+id/tva_payer_liste_article_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Reste Av" />
+        <TextView
+            android:id="@+id/qte_payer_liste_article_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Qte" />
+
+        <TextView
+            android:id="@+id/prix_payer_liste_article_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Prix U" />
+        <TextView
+            android:id="@+id/remise_liste_article_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Remise" />
+        <TextView
+            android:id="@+id/tva_liste_article_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="TVA" />
+
+        <TextView
+            android:id="@+id/montant_liste_article_facture_avoir_qte_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Montant" />
+    </LinearLayout>
+
+</RelativeLayout>

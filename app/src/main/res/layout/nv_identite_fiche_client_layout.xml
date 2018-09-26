@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            /////////////////////////////adresse //////////////////////////////////////////////////////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Adresse" />
+
+                <EditText
+                    android:id="@+id/nv_identite_adresse_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            //////////////////////////code postal /////////////////////////////////////
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Code postal" />
+
+                <EditText
+                    android:id="@+id/nv_identite_code_postal_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+
+            ////////////////////////ville /////////////////////////////////////////////
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Ville" />
+
+                <EditText
+                    android:id="@+id/nv_identite_ville_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+
+
+            ////////////////////////region/////////////////////////////////////////////
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Region" />
+
+                <EditText
+                    android:id="@+id/nv_identite_region_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+            ////////////////////////pays ////////////////////////////////////////////////
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Pays" />
+
+                <EditText
+                    android:id="@+id/nv_identite_pays_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+            ///////////////////////e-mail///////////////////////////////////////////////
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="E-mail" />
+
+                <EditText
+                    android:id="@+id/nv_identite_mail_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+            ///////////////////////site web /////////////////////////////////
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Site Web" />
+
+                <EditText
+                    android:id="@+id/nv_identite_site_web_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+            ///////////////////////facebook /////////////////////////////////
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Facebook" />
+
+                <EditText
+                    android:id="@+id/nv_identite_facebook_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+            ////////////////////////telephone
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Telephone" />
+
+                <EditText
+                    android:id="@+id/nv_identite_telephone_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+            ////////////////////////fax/////
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Fax" />
+
+                <EditText
+                    android:id="@+id/nv_identite_fax_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+            ////////////////////////mobile/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="mobile" />
+
+                <EditText
+                    android:id="@+id/nv_identite_mobile_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+            ////////////////////////tel 2
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tel 2" />
+
+                <EditText
+                    android:id="@+id/nv_identite_tel2_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+            ////////////////////////skype
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Skype" />
+
+                <EditText
+                    android:id="@+id/nv_identite_skype_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+            ////////////////////////abrégé
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Abrégé" />
+
+                <EditText
+                    android:id="@+id/nv_identite_abrege_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

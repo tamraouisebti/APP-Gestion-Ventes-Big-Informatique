@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <CheckBox
+            android:id="@+id/check_liste_facture_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/numero_liste_facture_client_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/commande_liste_facture_client_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+           />
+
+        <TextView
+            android:id="@+id/client_liste_facture_client_txt"
+            android:layout_width="250dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+             />
+
+        <TextView
+            android:id="@+id/date_liste_facture_client_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+             />
+
+        <TextView
+            android:id="@+id/date_echeance_liste_facture_client_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+             />
+
+        <TextView
+            android:id="@+id/montanat_ttc_liste_facture_client_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+             />
+        <TextView
+            android:id="@+id/reste_payer_liste_facture_client_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+        />
+        <TextView
+            android:id="@+id/etat_liste_facture_client_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+             />
+        <TextView
+            android:id="@+id/etat_livraison_liste_facture_client_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            />
+        <TextView
+            android:id="@+id/etat_compta_liste_facture_client_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+         />
+        <TextView
+            android:id="@+id/unite_liste_facture_client_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+           />
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

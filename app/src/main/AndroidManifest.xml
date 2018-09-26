@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tamrouikarim.bigsoftweb">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".client_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".catalogue_activity" />
+        <activity android:name=".fiche_client_activity" />
+        <activity android:name=".nv_client_activity" />
+        <activity android:name=".proforma_client_activity" />
+        <activity android:name=".contrat_client_activity" />
+        <activity android:name=".commande_client" />
+        <activity android:name=".location_calendrier" />
+        <activity android:name=".location_liste" />
+        <activity android:name=".facture_client" />
+        <activity android:name=".facture_rg" />
+        <activity android:name=".facture_avoir" />
+        <activity android:name=".bon_livraison" />
+        <activity android:name=".bon_retour" />
+        <activity
+            android:name=".pop_client"
+            android:theme="@style/AppTheme.custompoptheme" />
+        <activity android:name=".paiement_client" />
+        <activity android:name=".pop_commande"
+            android:theme="@style/AppTheme.custompoptheme"/>
+        <activity android:name=".pop_contrat"
+        android:theme="@style/AppTheme.custompoptheme"/>
+        <activity android:name=".pop_info_client"
+            android:theme="@style/AppTheme.custompoptheme"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <Button
+                    android:id="@+id/nv_commande_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Nouveau"
+                    />
+
+                <Button
+                    android:id="@+id/supp_commande_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Supprimer" />
+
+                <Button
+                    android:id="@+id/imprimer_commande_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Imprimer" />
+
+
+                <Button
+                    android:id="@+id/excel_commande_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Excel" />
+
+
+            </LinearLayout>
+        </ScrollView>
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.087">
+
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="167dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true">
+
+                    <CheckBox
+                        android:id="@+id/check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true" />
+
+                    <TextView
+                        android:id="@+id/numero_proforma_commnde_txt"
+                        android:layout_width="150dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/check"
+                        android:text="Commande" />
+
+                    <TextView
+                        android:id="@+id/client_proforma_commande_txt"
+                        android:layout_width="250dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/numero_proforma_commnde_txt"
+                        android:text="Client" />
+
+                    <TextView
+                        android:id="@+id/date_proforma_commande_txt"
+                        android:layout_width="150dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/client_proforma_commande_txt"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/montant_ttc_proforma_commande_txt"
+                        android:layout_width="150dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/date_proforma_commande_txt"
+                        android:text="Montant T.T.C" />
+
+                    <TextView
+                        android:id="@+id/reste_facturer_proforma_commande_txt"
+                        android:layout_width="150dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/montant_ttc_proforma_commande_txt"
+                        android:text="M.t Rest à Facturer" />
+
+                    <TextView
+                        android:id="@+id/etat_proforma_commande_txt"
+                        android:layout_width="150dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/reste_facturer_proforma_commande_txt"
+                        android:text="Etat" />
+                    <TextView
+                        android:id="@+id/etat_livraison_proforma_commande_txt"
+                        android:layout_width="150dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/etat_proforma_commande_txt"
+                        android:text="Etat Laivraison" />
+                    <TextView
+                        android:id="@+id/unite_proforma_commande_txt"
+                        android:layout_width="150dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/etat_livraison_proforma_commande_txt"
+                        android:text="Unité" />
+
+
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/liste_commande"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

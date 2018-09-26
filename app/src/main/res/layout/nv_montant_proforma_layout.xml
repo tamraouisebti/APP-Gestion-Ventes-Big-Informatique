@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            /////////////////////////////montant h t 0,00 //////////////////////////////////////////////////////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Montant H.T" />
+
+                <EditText
+                    android:id="@+id/nv_comptabilete_compte_fiche_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="0,00"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            //////////////////////////taux remise(%) 0  /////////////////////////////////////
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Taux Remise" />
+
+                <EditText
+                    android:id="@+id/nv_taux_remise_montant_proforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+
+            ////////////////////////montant remise  /////////////////////////////////////////////
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Montant Remise" />
+
+                <EditText
+                    android:id="@+id/nv_montant_remise_montant_proforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="0,00"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+
+
+            ////////////////////////m h t remisé 0.00 /////////////////////////////////////////////
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="M.H.T Remisé" />
+
+                <EditText
+                    android:id="@+id/nv_mht_remisé_montant_proforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="0,00"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+
+            //////////////////////////// montant tva 0.00
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Montant TVA" />
+
+                <EditText
+                    android:id="@+id/nv_montant_tva_montant_proforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="0,00"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            //////////////////////////// montant timbre 0.00
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Montant Timbre" />
+
+                <EditText
+                    android:id="@+id/nv_montant_timbre_montant_proforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="0,00"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            //////////////////////////// taux R G 0
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Taux R.G" />
+
+                <EditText
+                    android:id="@+id/nv_taux_rg_montant_proforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            ////////////////////////////  montant ttc
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Montant R.G" />
+
+                <EditText
+                    android:id="@+id/nv_montant_rg_montant_proforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="0,00"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            ////////////////////////////  montant ttc
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Montant T.T.C" />
+
+                <EditText
+                    android:id="@+id/nv_montant_ttc_montant_proforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="0,00"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            ////////////////////////////taux caution
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Taux Caution" />
+
+                <EditText
+                    android:id="@+id/nv_taux_caution_montant_proforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            ////////////////////////////mht caution
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="M.H.T Caution" />
+
+                <EditText
+                    android:id="@+id/nv_mht_caution_montant_proforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="0,00"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

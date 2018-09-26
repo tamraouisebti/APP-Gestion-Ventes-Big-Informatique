@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <CheckBox
+            android:id="@+id/check_liste_commande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:id="@+id/numero_liste_commande_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Commande"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:id="@+id/client_liste_commande_txt"
+            android:layout_width="250dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Client"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:id="@+id/date_liste_commande_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Date"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:id="@+id/montant_ttc_liste_commande_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Montant T.T.C"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:id="@+id/reste_facturer_liste_commande_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="M.t Rest à Facturer"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:id="@+id/etat_liste_commande_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Etat"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+        <TextView
+            android:id="@+id/etat_livraison_liste_commande_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Etat Laivraison"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+        <TextView
+            android:id="@+id/unite_liste_commande_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Unité"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

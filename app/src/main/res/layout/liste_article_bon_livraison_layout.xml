@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <CheckBox
+            android:id="@+id/check_liste_article_bon_livraison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/numero_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Article" />
+
+        <TextView
+            android:id="@+id/libelle_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Libellé Article" />
+
+        <TextView
+            android:id="@+id/um_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="U M" />
+
+        <TextView
+            android:id="@+id/magasin_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Magasin" />
+
+        <TextView
+            android:id="@+id/magasin_l_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Magazin L" />
+
+
+
+        <TextView
+            android:id="@+id/qte_stock_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Qte Stock" />
+
+        <TextView
+            android:id="@+id/qte_reserve_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Qte Reservee" />
+
+        <TextView
+            android:id="@+id/qte_cmd_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Qte Cmd" />
+        <TextView
+            android:id="@+id/qte_fact_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Qte Fact" />
+        <TextView
+            android:id="@+id/reste_liv_article_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Reste Liv" />
+        <TextView
+            android:id="@+id/qte_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Qte" />
+
+        <TextView
+            android:id="@+id/prix_u_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Prix U" />
+        <TextView
+            android:id="@+id/rem_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Rem" />
+        <TextView
+            android:id="@+id/tva_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="TVA" />
+
+        <TextView
+            android:id="@+id/montant_article_bon_livraison_txt"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:text="Montant" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

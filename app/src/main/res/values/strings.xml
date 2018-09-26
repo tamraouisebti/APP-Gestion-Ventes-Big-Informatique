@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">BigSoftWeb</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="imageusr">TODO</string>
+    <string name="largeur_texte">150px</string>
+    <string name="nv">Nouvelle Facture D\'Avoir</string>
+
+    ///////proforma spinner
+
+    <string-array name="proforma_array_spinner">
+        <item>Article</item>
+        <item>Remises</item>
+        <item>Commandes</item>
+        <item>Factures</item>
+        <item>Avoirs</item>
+        <item>Livraison</item>
+        <item>Description</item>
+        <item>Montant</item>
+    </string-array>
+
+
+    ///////contrat spinner
+
+    <string-array name="contrat_array_spinner">
+        <item>Article</item>
+        <item>Description</item>
+        <item>Factures</item>
+        <item>Commandes</item>
+        <item>Avoirs</item>
+        <item>Livraison</item>
+        <item>Montant</item>
+    </string-array>
+
+    ///////commande spinner
+
+    <string-array name="commande_array_spinner">
+        <item>Article</item>
+        <item>Factures</item>
+        <item>Avoirs</item>
+        <item>Proformas</item>
+        <item>Livraison</item>
+        <item>Contrat</item>
+        <item>Description</item>
+        <item>Montant</item>
+    </string-array>
+
+    ///////facture client spinner
+
+    <string-array name="facture_client_array_spinner">
+        <item>Article</item>
+        <item>Description</item>
+        <item>Proformas</item>
+        <item>Livraison</item>
+        <item>Commandes</item>
+        <item>Contrat</item>
+        <item>Franchise TVA</item>
+        <item>Montant</item>
+    </string-array>
+
+
+    ///////facture avoir spinner
+
+    <string-array name="facture_avoir_valeur_array_spinner">
+        <item>Article</item>
+        <item>Description</item>
+        <item>Factures</item>
+        <item>Proformas</item>
+        <item>Livraison</item>
+        <item>Commandes</item>
+        <item>Contrat</item>
+        <item>Montant</item>
+    </string-array>
+
+    ///////facture avoir spinner
+
+    <string-array name="facture_avoir_qte_array_spinner">
+        <item>Article</item>
+        <item>Description</item>
+        <item>Factures</item>
+        <item>Proformas</item>
+        <item>Livraison</item>
+        <item>Commandes</item>
+        <item>Contrat</item>
+        <item>Montant</item>
+    </string-array>
+
+
+    ///////bon livraison spinner
+
+    <string-array name="bon_livraison_array_spinner">
+        <item>Article</item>
+        <item>Proformas</item>
+        <item>Commandes</item>
+        <item>Contrat</item>
+        <item>Factures</item>
+        <item>Description</item>
+        <item>Montant</item>
+    </string-array>
+
+
+    ///////bon livraison spinner
+
+    <string-array name="avoir_btn_nv_array_spinner">
+        <item>Valeur</item>
+        <item>Quantité</item>
+    </string-array>
+
+
+    <string-array name="type_fiche_nv_array_spinner">
+        <item>Local</item>
+        <item>Etranger</item>
+    </string-array>
+
+    <string-array name="etat_fiche_nv_array_spinner">
+        <item>Actif</item>
+        <item>Bloqué</item>
+    </string-array>
+
+
+    <string-array name="type_facture_nv_array_spinner">
+        <item>Aucun</item>
+        <item>Intervention cession inter-unites</item>
+        <item>Intervention de garantie</item>
+        <item>Intervention hors garantie</item>
+        <item>Intervention nous meme</item>
+        <item>Visite de garantie</item>
+    </string-array>
+
+    <string-array name="exon_tva_facture_nv_array_spinner">
+        <item>Nom</item>
+        <item>Oui</item>
+    </string-array>
+
+    <string-array name="exon_timbre_facture_nv_array_spinner">
+        <item>Nom</item>
+        <item>Oui</item>
+    </string-array>
+
+    <string-array name="type_remise_facture_nv_array_spinner">
+        <item>Par Ligne</item>
+        <item>M.Globale</item>
+        <item>T.Globale</item>
+        <item>Multi Remise</item>
+    </string-array>
+
+    <string-array name="type_vente_facture_nv_array_spinner">
+        <item>détaille</item>
+    </string-array>
+
+
+    <string-array name="mode_paiement_facture_nv_array_spinner">
+        <item>Cheque</item>
+        <item>Ordre de virement</item>
+        <item>Espece</item>
+        <item>Lettre de Credit</item>
+        <item>Remise Document</item>
+        <item>Sur Solde</item>
+    </string-array>
+
+
+    <string-array name="mode_reg_facture_nv_array_spinner">
+        <item>A Terme</item>
+        <item>Au Comptant</item>
+    </string-array>
+
+
+</resources>

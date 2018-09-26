@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="292dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Renseignement"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/facture_client_save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:text="save"/>
+
+
+        </LinearLayout>
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="224dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="324dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.275"
+                tools:layout_editor_absoluteX="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Facture"
+                        android:textColor="@color/red" />
+
+                    <EditText
+                        android:id="@+id/nv_numero_facture_editxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Type" />
+
+                    <Spinner
+                        android:id="@+id/type_facture_nv_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:text="Client"
+                        android:textColor="@color/red"/>
+
+                    <EditText
+                        android:id="@+id/nv_client_facture_editxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                    <Button
+                        android:id="@+id/select_client_facture_btn"
+                        android:layout_width="32dp"
+                        android:layout_height="match_parent"
+                        android:text="+"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Commercial" />
+
+                    <EditText
+                        android:id="@+id/nv_commercial_facture_editxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Date"
+                        android:textColor="@color/red" />
+
+                    <EditText
+                        android:id="@+id/nv_date_facture_editxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="date" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:text="Commande"
+                        />
+
+                    <EditText
+                        android:id="@+id/nv_commande_facture_editxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                    <Button
+                        android:id="@+id/select_commande_facture_btn"
+                        android:layout_width="32dp"
+                        android:layout_height="match_parent"
+                        android:text="+"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:text="Contrat"
+                        />
+
+                    <EditText
+                        android:id="@+id/nv_contrat_facture_editxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                    <Button
+                        android:id="@+id/select_contrat_facture_btn"
+                        android:layout_width="32dp"
+                        android:layout_height="match_parent"
+                        android:text="+"
+                        />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Exon TVA"
+                        android:textColor="@color/red" />
+
+
+                    <Spinner
+                        android:id="@+id/exon_tva_facture_nv_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Exon Timbre"
+                        android:textColor="@color/red"
+                        />
+
+                    <Spinner
+                        android:id="@+id/exon_timbre_facture_nv_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Type Remise"
+                        android:textColor="@color/red" />
+
+                    <Spinner
+                        android:id="@+id/type_remise_facture_nv_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Type Vente"
+                        android:textColor="@color/red"/>
+
+                    <Spinner
+                        android:id="@+id/type_vente_facture_nv_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                    </Spinner>
+                </LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Mode Paiement"
+                        android:textColor="@color/red"/>
+
+                    <Spinner
+                        android:id="@+id/mode_paiement_facture_nv_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                    </Spinner>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Mode Reg"
+                        android:textColor="@color/red"/>
+
+                    <Spinner
+                        android:id="@+id/mode_reg_facture_nv_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                    </Spinner>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Date Echéance"
+                        android:textColor="@color/red" />
+
+                    <EditText
+                        android:id="@+id/nv_date_echeance_facture_editxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="date" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Spinner
+            android:id="@+id/facture_client_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            >
+
+        </Spinner>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginStart="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/scrollView2">
+
+
+
+            <ViewFlipper
+                android:id="@+id/nv_facture_client_vf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <include layout="@layout/article_facture"/>
+                <include layout="@layout/nv_description_proforma_layout"/>
+                <include layout="@layout/proforma_principale_layout"/>
+                <include layout="@layout/principale_bon_livraison"/>
+                <include layout="@layout/principale_commande"/>
+                <include layout="@layout/principale_contrat_layout"/>
+                <include layout="@layout/franchise_tva_layout"/>
+                <include layout="@layout/nv_montant_proforma_layout"/>
+
+            </ViewFlipper>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
