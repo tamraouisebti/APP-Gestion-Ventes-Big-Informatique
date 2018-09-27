@@ -317,8 +317,8 @@ public class facture_client extends AppCompatActivity implements AdapterView.OnI
             if(resultCode== Activity.RESULT_OK)
             {
                 Bundle extras=data.getBundleExtra("bundle_commande");
-                CodeCmd=extras.getString("codecmd");
-                NumCmd=extras.getString("numcmd");
+                CodeCmd=extras.getString("codecmd");CodeCmd="'"+CodeCmd+"'";
+                NumCmd=extras.getString("numcmd");NumCmd="'"+NumCmd+"'";
 
                 EditText edittxt=(EditText)findViewById(R.id.nv_commande_facture_editxt);
                 edittxt.setText(CodeCmd+" "+NumCmd);
@@ -328,8 +328,8 @@ public class facture_client extends AppCompatActivity implements AdapterView.OnI
             if(resultCode== Activity.RESULT_OK)
             {
                 Bundle extras=data.getBundleExtra("bundle_contrat");
-                CodeCtr=extras.getString("codectr");
-                NumCtr=extras.getString("numctr");
+                CodeCtr=extras.getString("codectr");CodeCtr="'"+CodeCtr+"'";
+                NumCtr=extras.getString("numctr");NumCtr="'"+NumCtr+"'";
 
                 EditText edittxt=(EditText)findViewById(R.id.nv_contrat_facture_editxt);
                 edittxt.setText(CodeCtr+" "+NumCtr);
@@ -610,8 +610,8 @@ public class facture_client extends AppCompatActivity implements AdapterView.OnI
 
 
 
-            String gh="'"+ CodeDoc+"','"+ NumDoc    +"','"+ CodeOrig   +"','"+ NumOrig   +"','"+ TypeOrig +"','"+ CodeCmd  +"','"+ NumCmd  +"','"+ CodeCtr  +
-                    "','"+ NumCtr   +"','"+ CodeTiers    +"','"+ NumTiers   +"','"+ NomTiers   +"','"+ CodeCategorie  +"','"+ TypeDoc +"',"+ isPenalite+ ","+
+            String gh="'"+ CodeDoc+"','"+ NumDoc    +"','"+ CodeOrig   +"','"+ NumOrig   +"','"+ TypeOrig +"',"+ CodeCmd  +","+ NumCmd  +","+ CodeCtr  +
+                    ","+ NumCtr   +",'"+ CodeTiers    +"','"+ NumTiers   +"','"+ NomTiers   +"','"+ CodeCategorie  +"','"+ TypeDoc +"',"+ isPenalite+ ","+
                     DateDoc  +",'"+ CodePer   +"','"+ CodePerUn    +"',"+ DateEchPai+",'"+ ModePai +"','"+ ModeReg +"','"+ ModeAv  +"','"+
                     TypeVte +"','"+ ExonTVA +"','"+ ExonTimbre+"',"+ AppTimbre+","+ TypeRem+","+ TRem +","+ MTRemise+ ","+ MTTVA+","+ MTTaxe+","+
                     MTHT+","+ MTHTR+ ","+ MTTC+","+ MTimbre+ ","+ MTRG+ ","+ TRG+ ","+ FRG+ ","+ MTPaye+ ","+ RestePaye+ ","+ MTAv+ ","+
