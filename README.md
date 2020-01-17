@@ -5,6 +5,6 @@ Cette Application a été implementer lors d'un stage chez : [BIG INFORMATIQUE A
 1- menu principal pour naviguer entre les différentes parties :
 
 
-<p align="right">
-  <img src="Screen1.jpg" width="350" title="Screen 1">
+<p align="Left">
+  <img src="screen1.jpg" width="350" title="Screen 1">
 </p>
