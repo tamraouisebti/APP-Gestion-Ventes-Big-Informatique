@@ -20,7 +20,7 @@ cette application la version mobile qui offre quelques fonctionnalités du ERP [
 
 3- « fiche client » en cliquant sur un client, une page contenant toute les informations du client sélectionné s’affiche.
 <p align="Left">
-  <img src="screen3.jpg" width="350" title="Screen 3">
+  <img src="screen3.JPG" width="350" title="Screen 3">
 </p>
 
 4- « Facture Client » l’ajout d’une nouvelle facture : saisir les informations puis sauvegarder.
